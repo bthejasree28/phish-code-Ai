@@ -1,0 +1,6 @@
+{
+  "name": "PhishCode AI",
+  "description": "Trustworthy cybersecurity platform to scan URLs, detect phishing emails, analyze scam messages, and get real-time security guidance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

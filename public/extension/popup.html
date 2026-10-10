@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhishCode AI Scanner</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="extension-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="brand">
+        <div class="logo-badge">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="brand-title">PhishCode <span class="highlight">AI</span></h1>
+          <p class="brand-subtitle">Website Phishing Scanner</p>
+        </div>
+      </div>
+      <span class="version-tag">v1.0 • MV3</span>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="content">
+      <!-- Target Website Card -->
+      <div class="target-card">
+        <div class="target-label">Active Website Tab</div>
+        <div id="target-url" class="target-url">Detecting current tab...</div>
+      </div>
+
+      <!-- Initial / Idle State -->
+      <div id="idle-state" class="state-panel">
+        <button id="scan-btn" class="primary-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          Scan This Website
+        </button>
+        <p class="privacy-note">
+          🔒 <strong>Privacy Guarantee:</strong> Evaluates URL structure only. Does not access cookies, passwords, or form inputs.
+        </p>
+      </div>
+
+      <!-- Scanning Loading State -->
+      <div id="loading-state" class="state-panel hidden">
+        <div class="spinner"></div>
+        <p class="loading-title">Scanning Website Security Indicators...</p>
+        <p class="loading-desc">Inspecting SSL protocol, host format, brand lookalikes, and TLD reputation.</p>
+      </div>
+
+      <!-- Result State -->
+      <div id="result-state" class="state-panel hidden">
+        <div id="risk-badge" class="risk-badge">
+          <span id="risk-level-text">LOW RISK</span>
+          <span id="risk-score-text">0 / 100</span>
+        </div>
+
+        <!-- Meter bar -->
+        <div class="meter-track">
+          <div id="meter-fill" class="meter-fill"></div>
+        </div>
+
+        <!-- Explanation Summary -->
+        <div id="explanation-box" class="explanation-box"></div>
+
+        <!-- Warnings List -->
+        <div id="warnings-container" class="findings-group hidden">
+          <div class="findings-header warning-header">Detected Warning Signs</div>
+          <div id="warnings-list" class="findings-list"></div>
+        </div>
+
+        <!-- Clean Checks List -->
+        <div id="clean-container" class="findings-group hidden">
+          <div class="findings-header clean-header">Clean Checks</div>
+          <div id="clean-list" class="findings-list"></div>
+        </div>
+
+        <!-- Recommendations -->
+        <div class="findings-group">
+          <div class="findings-header action-header">Recommended Safety Action</div>
+          <div id="actions-list" class="actions-list"></div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="button-row">
+          <button id="rescan-btn" class="secondary-btn">Scan Again</button>
+          <button id="web-app-btn" class="primary-btn small-btn">Full Dashboard →</button>
+        </div>
+      </div>
+
+      <!-- Unsupported / Internal Tab State -->
+      <div id="unsupported-state" class="state-panel hidden">
+        <div class="unsupported-box">
+          <p class="unsupported-title">Browser System Tab</p>
+          <p class="unsupported-desc">
+            Chrome does not allow extensions to inspect internal system pages (such as <code>chrome://settings</code> or empty tabs). Please navigate to a standard website (HTTP/HTTPS) and reopen.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span>Manifest V3 • Privacy-Preserving Security</span>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

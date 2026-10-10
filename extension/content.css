@@ -1,0 +1,206 @@
+/* PhishCode AI - In-Gmail Security Card Styles */
+.phishcode-banner-container {
+  margin: 12px 0 16px 0 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+  position: relative !important;
+  z-index: 10 !important;
+  clear: both !important;
+}
+
+.phishcode-card {
+  background-color: #FFFFFF !important;
+  border: 1px solid #E5E3DA !important;
+  border-radius: 12px !important;
+  padding: 14px 18px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+  color: #292F2D !important;
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+}
+
+.phishcode-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  margin-bottom: 10px !important;
+  padding-bottom: 8px !important;
+  border-bottom: 1px solid #F0EFEA !important;
+}
+
+.phishcode-brand {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+.phishcode-brand-name {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #292F2D !important;
+}
+
+.phishcode-brand-name strong {
+  color: #52796F !important;
+}
+
+.phishcode-tag {
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  background-color: #CAD8C5 !important;
+  color: #292F2D !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
+}
+
+.phishcode-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  padding: 4px 10px !important;
+  border-radius: 20px !important;
+  letter-spacing: 0.3px !important;
+}
+
+.phishcode-score {
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  opacity: 0.85 !important;
+}
+
+.phishcode-summary {
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: #292F2D !important;
+  margin-bottom: 8px !important;
+}
+
+.phishcode-reasons-title {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  color: #727873 !important;
+  letter-spacing: 0.5px !important;
+  margin-top: 8px !important;
+  margin-bottom: 4px !important;
+}
+
+.phishcode-reasons-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 0 10px 0 !important;
+}
+
+.phishcode-reasons-list li {
+  font-size: 12px !important;
+  color: #292F2D !important;
+  padding: 3px 0 !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 6px !important;
+}
+
+.bullet-warn {
+  color: #805B18 !important;
+  font-weight: bold !important;
+}
+
+.phishcode-explanation-box {
+  background-color: #F8F7F2 !important;
+  border: 1px solid #E5E3DA !important;
+  border-radius: 8px !important;
+  padding: 8px 12px !important;
+  font-size: 12px !important;
+  color: #292F2D !important;
+  margin-bottom: 10px !important;
+}
+
+.phishcode-safe-signs {
+  background-color: #DDEBDD !important;
+  border: 1px solid #CAD8C5 !important;
+  border-radius: 8px !important;
+  padding: 8px 12px !important;
+  font-size: 12px !important;
+  color: #315C3B !important;
+  margin-bottom: 10px !important;
+}
+
+.phishcode-footer {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+  margin-top: 8px !important;
+  padding-top: 6px !important;
+}
+
+.phishcode-privacy-note {
+  font-size: 11px !important;
+  color: #727873 !important;
+}
+
+.phishcode-details-toggle {
+  background-color: #F8F7F2 !important;
+  border: 1px solid #E5E3DA !important;
+  color: #52796F !important;
+  font-weight: 600 !important;
+  font-size: 11px !important;
+  padding: 4px 10px !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+}
+
+.phishcode-details-toggle:hover {
+  background-color: #E5E3DA !important;
+}
+
+.phishcode-details-drawer {
+  margin-top: 10px !important;
+  padding-top: 10px !important;
+  border-top: 1px dashed #E5E3DA !important;
+  font-size: 11px !important;
+  color: #727873 !important;
+}
+
+.phishcode-details-drawer.hidden {
+  display: none !important;
+}
+
+.phishcode-meta-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+  gap: 6px !important;
+  margin-bottom: 8px !important;
+}
+
+.phishcode-links-section {
+  margin-top: 8px !important;
+}
+
+.phishcode-links-section ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 4px 0 0 0 !important;
+}
+
+.phishcode-links-section li {
+  padding: 2px 0 !important;
+  font-family: monospace !important;
+  font-size: 11px !important;
+  display: flex !important;
+  gap: 6px !important;
+}
+
+.phishcode-links-section li.link-sus {
+  color: #8A3028 !important;
+  font-weight: bold !important;
+}
+
+.link-host {
+  color: #52796F !important;
+  font-weight: 600 !important;
+}
